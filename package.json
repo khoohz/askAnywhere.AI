@@ -1,0 +1,36 @@
+{
+  "name": "ai-web-annotation-extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "wxt build && node scripts/verify-lazy-shiki.mjs",
+    "dev": "wxt",
+    "postinstall": "wxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/chrome": "^0.1.37",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@wxt-dev/module-react": "^1.2.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11",
+    "wxt": "^0.21.4"
+  },
+  "dependencies": {
+    "@shikijs/langs": "^4.4.3",
+    "@shikijs/themes": "^4.4.3",
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.39.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "shiki": "^4.4.3",
+    "zustand": "^5.0.15"
+  }
+}
